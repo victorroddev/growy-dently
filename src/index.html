@@ -7,9 +7,70 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="/src/js/script.js"></script>
     <title>Dently</title>
 </head>
-<body class="">
-    <h1 class="text-7xl">Test</h1>
-</body>
+<body class="bg-backgroundWhite">
+    <!--Hero Section-->
+    <div class=" flex bg-backgroundGreen rounded-b-md w-full h-screen">
+        <div class="w-[90%] max-w-[1440px] mx-auto mb-10 ">
+
+            <div class="flex flex-row justify-between">
+                <div class="mt-6" id="logo">
+                    <img src="/src/img/logo.svg" alt="">
+                </div>
+            
+            <!--NavBar | Desktop-->
+            <div class="flex-row gap-8 items-center hidden lg:flex font-headers font-bold text-backgroundWhite text-lg">
+                <a href="" class="">Información</a>
+                <a href="" class="py-2 px-3 bg-blue rounded-xl">Nuestros servicios</a>
+                <a href="" class="py-2 px-3 bg-backgroundWhite rounded-xl text-backgroundGreen">Agendar cita</a>
+            </div>
+
+            <!--Menu | Mobile version-->
+            <div class="flex-col w-[100%] h-screen items-center justify-center mt-16  gap-16 hidden" id="menu">
+                <div>
+                    <a href="" class="font-headers font-bold text-backgroundWhite text-lg">Información</a>
+                </div>
+                <div class="text-backgroundWhite py-4 w-[300px] text-center bg-blue rounded-xl">
+                    <a href="" class="font-bold text-lg">Nuestros servicios</a>
+                </div>
+                <div class="text-backgroundGreen py-4 w-[300px] bg-backgroundWhite rounded-xl text-center">
+                    <a href="" class="font-bold text-lg">Agendar cita</a>
+                </div>
+                <div class="" id="close-icon">
+                    <img src="/src/img/close-icon.svg" alt="" class="size-12" >
+                </div>
+            </div>
+
+                <div class="mt-6 lg:hidden" id="menu-icon">
+                    <img src="/src/img/menu-icon-material.svg" class="size-12" alt="">
+                </div> 
+            </div>
+
+            <div class="flex flex-col lg:flex-row justify-center items-center h-[90%]">
+                <div class="flex justify-center mb-10">
+                    <img src="/src/img/hero-icon.png" alt="" class="lg:hidden">
+                    <div class="hidden lg:flex">
+                        <img src="/src/img/hero-icon-desktop.png" class="" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div class="mb-4">
+                            <h1 class="text-center text-4xl font-headers font-bold text-backgroundWhite lg:text-5xl xl:text-7xl lg:leading-normal xl:leading-normal">Vuelve a <span class="underline decoration-blue">sonreír</span> con nosotros<h1>
+                            <p class="text-center text-backgroundWhite font-paragraphs text-lg xl:text-xl font-light">Especialistas en odontopediatría y ortodoncia </p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col items-center gap-4 pb-8">
+                        <a href="" class="w-[90%] py-3 lg:w-[455px] xl:w-[550px] xl:py-5 text-center bg-backgroundWhite font-headers font-bold text-lg xl:text-3xl text-backgroundGreen rounded-xl">Agenda tu cita</a>
+                        <a href="" class="w-[90%] py-3 lg:w-[455px] xl:w-[550px] xl:py-5 text-center bg-blue font-headers font-extralight text-lg xl:text-3xl text-backgroundWhite rounded-xl">Nuestros Servicios</a>
+                    </div>
+                </div>
+                </div>   
+
+        </div>
+
+    </div>
 </html>
