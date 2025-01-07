@@ -3,6 +3,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const menu = document.getElementById('menu');
     const logo = document.getElementById('logo');
     const close = document.getElementById('close-icon');
+    
+
 
     menuIcon.addEventListener('click', () => {
         menu.classList.add('flex');
@@ -21,8 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
         menuIcon.classList.add('flex')
         menuIcon.classList.remove('hidden')
     })
-
-
-
 })
+
 
