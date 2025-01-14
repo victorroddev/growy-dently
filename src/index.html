@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="/src/components.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="/src/js/script.js"></script>
     <script src="/src/js/script-toggle.js"></script>
     <title>Dently</title>
@@ -23,21 +27,21 @@
             
             <!--NavBar | Desktop-->
             <div class="flex-row gap-8 items-center hidden lg:flex font-headers font-bold text-backgroundWhite text-lg">
-                <a href="" class="">Información</a>
-                <a href="" class="py-2 px-3 bg-blue rounded-xl">Nuestros servicios</a>
-                <a href="" class="py-2 px-3 bg-backgroundWhite rounded-xl text-backgroundGreen">Agendar cita</a>
+                <a href="#section-info" class="hover: hover:scale-105 decoration-blue">Información</a>
+                <a href="#section-services" class="py-2 px-3 bg-blue rounded-xl btn-primary btn-blue">Nuestros servicios</a>
+                <a href="#section-date" class="py-2 px-3 bg-backgroundWhite rounded-xl text-backgroundGreen btn-primary btn-white">Agendar cita</a>
             </div>
 
             <!--Menu | Mobile version-->
             <div class="flex-col w-[100%] h-screen items-center justify-center mt-16  gap-16 hidden" id="menu">
                 <div>
-                    <a href="" class="font-headers font-bold text-backgroundWhite text-lg">Información</a>
+                    <a href="#section-info" id="info-btn" class="font-headers font-bold text-backgroundWhite text-lg">Información</a>
                 </div>
                 <div class="text-backgroundWhite py-4 w-[300px] text-center bg-blue rounded-xl">
-                    <a href="" class="font-bold text-lg">Nuestros servicios</a>
+                    <a href="#section-services" id="services-btn" class="font-bold text-lg">Nuestros servicios</a>
                 </div>
                 <div class="text-backgroundGreen py-4 w-[300px] bg-backgroundWhite rounded-xl text-center">
-                    <a href="" class="font-bold text-lg">Agendar cita</a>
+                    <a href="#section-date" id="date-btn" class="font-bold text-lg">Agendar cita</a>
                 </div>
                 <div class="" id="close-icon">
                     <img src="/src/img/close-icon.svg" alt="" class="size-12" >
@@ -65,8 +69,8 @@
                     </div>
                     
                     <div class="flex flex-col items-center gap-4 pb-8">
-                        <a href="" class="w-[90%] py-3 lg:w-[455px] xl:w-[550px] xl:py-5 text-center bg-backgroundWhite font-headers font-bold text-lg xl:text-3xl text-backgroundGreen rounded-xl">Agenda tu cita</a>
-                        <a href="" class="w-[90%] py-3 lg:w-[455px] xl:w-[550px] xl:py-5 text-center bg-blue font-headers font-extralight text-lg xl:text-3xl text-backgroundWhite rounded-xl">Nuestros Servicios</a>
+                        <a href="#section-date" class="w-[90%] py-3 lg:w-[455px] xl:w-[550px] xl:py-5 text-center bg-backgroundWhite font-headers font-bold text-3xl xl:text-3xl text-backgroundGreen rounded-xl btn-primary btn-white">Agenda tu cita</a>
+                        <a href="#section-services" class="w-[90%] py-3 lg:w-[455px] xl:w-[550px] xl:py-5 text-center bg-blue font-headers font-extralight text-3xl xl:text-3xl text-backgroundWhite rounded-xl btn-primary btn-blue">Nuestros Servicios</a>
                     </div>
                 </div>
                 </div>   
@@ -76,12 +80,12 @@
     </div>
 
     <!--Info Section-->
-    <div class="flex flex-wrap w-[95%] gap-16 max-w-[1440px] justify-center mx-auto mt-28">
+    <div class="flex flex-wrap w-[95%] gap-16 max-w-[1440px] justify-center mx-auto mt-28" id="section-services">
         <!--First Div-->
         <div class="flex flex-col w-full max-w-[400px] xl:max-w-[500px] 2xl:max-w-[600px]">
             <div class="w-full bg-backgroundWhite relative">
                 <div class="flex justify-center bg-backgroundGreen rounded-xl">
-                    <img src="/src/img/person.png" class="-mt-12" alt="">
+                    <img src="/src/img/person.png" class="-mt-12 img-png" alt="">
                 </div>
             </div>
             <h1 class="font-headers text-2xl md:text-3xl lg:text-4xl font-bold text-backgroundGreen text-center w-3/4 mx-auto mt-4">Expertos en blanqueamiento dental</h1>
@@ -90,7 +94,7 @@
         <div class="flex flex-col w-full max-w-[400px] xl:max-w-[500px] 2xl:max-w-[600px]">
             <div class="w-full bg-backgroundWhite relative">
                 <div class="flex justify-center bg-backgroundGreen rounded-xl">
-                    <img src="/src/img/person-1.png" class="-mt-12" alt="">
+                    <img src="/src/img/person-1.png" class="-mt-12 img-png" alt="">
                 </div>
             </div>
             <h1 class="font-headers text-2xl md:text-3xl lg:text-4xl font-bold text-backgroundGreen text-center w-3/4 mx-auto mt-4">Especialistas en implantes dentales</h1>
@@ -120,23 +124,23 @@
     <!--Info 2-->
 
     <div class="flex flex-col items-center lg:flex-row w-[95%] mx-auto max-w-[600px] lg:max-w-[1270px] rounded-lg mt-28 mb-28 bg-backgroundGreen">
-        <img src="/src/img/blanqueamiento-dental.jpg" class="rounded-t-lg w-full max-w-[600px]" alt="">
+        <img src="/src/img/blanqueamiento-dental.jpg" class="rounded-t-lg w-full max-w-[600px] img-png" alt="">
         <div class="bg-backgroundGreen w-full flex flex-col rounded-lg">
             <h1 class="mt-5 font-bold font-headers text-3xl text-backgroundWhite text-center">Blanqueamiento Dental desde:</h1>
             <h1 class="mt-5 mb-10 font-bold font-headers text-3xl text-backgroundWhite text-center" >$1,000 mxn</h1>
-            <a href="" class="bg-backgroundWhite py-3 rounded-lg w-[80%] max-w-[500px] text-center text-backgroundGreen font-headers font-bold text-3xl mx-auto mb-5">Agenda tu cita</a>
+            <a href="https://calendly.com/javier-rod-dev/blanqueamiento-dental" class="bg-backgroundWhite py-3 rounded-lg w-[80%] max-w-[500px] text-center text-backgroundGreen font-headers font-bold text-3xl mx-auto mb-5 btn-primary btn-white">Agenda tu cita</a>
         </div>
     </div>
 
     
     <!--Contact Section-->
-    <div class="bg-backgroundGreen w-full rounded-xl gap-3 mx-auto">
+    <div class="bg-backgroundGreen w-full rounded-xl gap-3 mx-auto" id="section-date">
         <div class="max-w-[1440px] flex flex-col gap-3 mt-10 mx-auto">
             <h1 class="font-headers text-2xl md:text-3xl lg:text-4xl text-backgroundWhite font-bold text-center mt-20">Agendar tu cita</h1>
             <p class="text-center font-paragraphs text-base text-backgroundWhite">Puedes hacerlo por los siguientes medios</p>
             <div class="flex flex-col w-full mx-auto gap-3">
-                <a href="" class="py-3 w-[80%] max-w-[500px] bg-backgroundWhite text-center mx-auto rounded-xl text-backgroundGreen font-headers text-3xl font-bold">Calendly</a>
-                <a href="" class="py-3 w-[80%] max-w-[500px] bg-backgroundWhite text-center mx-auto rounded-xl text-backgroundGreen font-headers text-3xl font-bold">WhatsApp</a>
+                <a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1fHWanpCL_Xikf4p5JGPc-Ql3U0L9NWZJqq0CsdXrxZix0hWfugaVII7_5ZHGFKtGpY64t1jpG" class="py-3 w-[80%] max-w-[500px] bg-backgroundWhite text-center mx-auto rounded-xl text-backgroundGreen font-headers text-3xl font-bold btn-primary btn-white">Google Calendar</a>
+                <a href="https://api.whatsapp.com/send/?phone=526566755715&text=Hola%2C+estoy+revisando+su+trabajo+en+Dently+quiero+mas+información.&type=phone_number&app_absent=0" class="py-3 w-[80%] max-w-[500px] bg-backgroundWhite text-center mx-auto rounded-xl text-backgroundGreen font-headers text-3xl font-bold btn-primary btn-white">WhatsApp</a>
             </div>
             <h1 class="text-backgroundWhite font-paragraphs text-center ">A traves de nuestros numeros de telefono:</h1>
             <h1 class="text-backgroundWhite font-headers text-center font-bold mb-20">656-234-6677-20</h1>
@@ -145,7 +149,7 @@
     </div>
 
     <!--FAQ Section-->
-    <div class="flex flex-col w-[95%] mt-28 mx-auto cursor-pointer">
+    <div class="flex flex-col w-[95%] mt-28 mb-28 mx-auto cursor-pointer" id="section-info">
         <!--Horarios-->
         <div id="hours" class="cursor-pointer flex flex-row items-center justify-between bg-backgroundGreen rounded-xl w-full max-w-[1270px] mx-auto">
             <img id="arrow-hours" src="/src/img/arrow.png" class="size-10 object-contain ml-3 my-2" alt="">
@@ -154,20 +158,35 @@
         </div>
         <!--Div to show-->
         <div id="hours-div" class="mx-auto -mt-2 bg-backgroundWhite border-2 border-backgroundGreen w-full max-w-[1270px] transition duration-300 ease-in-out hidden">
-            <h1 class="text-center mt-14">Lunes a Viernes</h1>
-            <h1 class="text-center mb-14">9:00 am 6:00 pm</h1>
+            <div class="flex flex-row items-center justify-between ">
+                <img id="arrow-hours" src="/src/img/arrow.png" class="size-10 object-contain ml-3 my-2 hidden md:flex" alt="">
+                <div class="flex flex-col mx-auto md:mx-auto">
+                    <h1 class="text-center font-bold font-paragraphs mt-14">Lunes a Viernes</h1>
+                    <h1 class="text-center font-paragraphs">9:00 am - 6:00 pm</h1>
+                    <h1 class="text-center font-bold font-paragraphs">Sabados</h1>
+                    <h1 class="text-center font-paragraphs mb-14">9:00 am a 2:00 pm</h1>
+                </div>
+                <div class="bg-white hidden md:flex">.</div>
+            </div>
         </div>
 
         <!--Ubicacion-->
-        <div id="ubication" class="flex flex-row items-center justify-between bg-backgroundGreen rounded-xl w-full max-w-[1270px] mx-auto mt-5">
+        <div id="ubication" class="flex flex-row items-center justify-between bg-backgroundGreen  rounded-xl w-full max-w-[1270px] mx-auto mt-5">
             <img id="arrow-ubication" src="/src/img/arrow.png" class="size-10 object-contain ml-3 my-2" alt="">
             <h1 class="text-2xl font-headers text-backgroundWhite font-bold faq-item faq-question">Ubicacion</h1>
             <div class="text-backgroundGreen">.</div>
         </div>
         <!--Div to show-->
         <div id="ubication-div" class="mx-auto bg-backgroundWhite border-2 border-backgroundGreen w-full max-w-[1270px] faq-item faq-answer -mt-2 hidden">
-            <h1 class="text-center mt-14">Calle Loremp Ipsum</h1>
-            <h1 class="text-center mb-14">Numero 129</h1>
+            <div class="flex flex-row items-center justify-between">
+                <img id="arrow-hours" src="/src/img/arrow.png" class="size-10 object-contain ml-3 my-2 hidden md:flex" alt="">
+                <div class="flex flex-col mx-auto md:mx-auto">
+                    <h1 class="text-center mt-14 font-bold font-paragraphs">Calle Loremp Ipsum</h1>
+                    <h1 class="text-center mb-3 font-paragraphs">Numero 129</h1>
+                    <a href="" class="py-2 px-3 font-paragraphs font-bold text-white bg-blue hover:bg-backgroundGreen rounded-xl btn-primary mb-14 text-center">Como Llegar</a>
+                </div>
+                <div class="bg-white hidden md:flex">.</div>
+            </div>          
         </div>
         <!--Metodos de pago-->
         <div id="pay" class="flex flex-row items-center justify-between bg-backgroundGreen rounded-xl w-full max-w-[1270px] mx-auto mt-5">
@@ -177,10 +196,25 @@
         </div>
         <!--Div to show-->
         <div id="pay-div" class="mx-auto bg-backgroundWhite border-2 border-backgroundGreen w-full max-w-[1270px] faq-item faq-answer -mt-2 hidden">
-            <h1 class="text-center mt-14">Oxxo, PayPal, Bitso</h1>
-            <h1 class="text-center mb-14">Spei, Binance, Efectivo</h1>
-            
+            <div class="flex flex-row items-center justify-between">
+                <img id="arrow-hours" src="/src/img/arrow.png" class="size-10 object-contain ml-3 my-2 hidden md:flex" alt="">
+                <div class="flex flex-col mx-auto md:mx-auto">
+                    <h1 class="text-center mt-14 font-paragraphs">Oxxo, PayPal, Bitso</h1>
+                    <h1 class="text-center mb-14 font-paragraphs">Spei, Binance, Efectivo</h1>
+                </div>
+                <div class="bg-white hidden md:flex">.</div>
+            </div>
         </div>
+    </div>
+
+    <!--Growy Section-->
+    <div class="flex flex-col bg-backgroundGreen w-full rounded-xl">
+        <div class="flex flex-row max-w-60 mx-auto mt-16">
+            <img src="/src/img/growy-white.svg"  class="size-20" alt="">
+            <h1 class="font-growy font-black text-4xl mt-6 text-white">Growy</h1>
+        </div>
+        <p class="max-w-96 mx-auto text-center font-paragraphs text-white">¿Te preguntas qué puede hacer Growy? Dently es un ejemplo de sitio web creado por nosotros. Descubre cómo puedes tener un sitio así.</p>
+        <a href="https://www.growy.tech/" class="mb-16 text-center text-backgroundGreen mx-auto mt-3 py-3 w-[80%] max-w-[500px] font-headers text-3xl font-bold bg-white rounded-xl btn-primary btn-white">¡Empieza ahora!</a>
     </div>
 
     <!--Footer-->
@@ -192,8 +226,12 @@
                 <h1 class="font-headers text-backgroundWhite font-bold md:text-left text-center ml-3 mb-3">GROWY</h1>
             </div>
             <div class="flex flex-row gap-3 mx-auto md:mx-0 mb-10 mt-3 md:mt-10">
-                <img src="/src/img/facebook-icon.svg" class="md:size-10" alt="">
-                <img src="/src/img/instagram-icon.svg" class="md:size-10" alt="">
+                <a href="https://www.facebook.com/profile.php?id=61571831915265">
+                    <img src="/src/img/facebook-icon.svg" class="md:size-10" alt="">
+                </a>
+                <a href="">
+                    <img src="/src/img/instagram-icon.svg" class="md:size-10" alt="">
+                </a>
             </div>
         </div>
     </div>

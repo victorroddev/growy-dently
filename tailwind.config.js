@@ -10,7 +10,8 @@ module.exports = {
       },
       fontFamily :{
         headers: ['Poppins'],
-        paragraphs: ['Noto Sans']
+        paragraphs: ['Noto Sans'],
+        growy: ['Urbanist']
       }
     },
   },
