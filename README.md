@@ -1,1 +1,0 @@
-#Growy Dently demo site
